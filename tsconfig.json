@@ -26,9 +26,11 @@
         "dist/hello-world/*"
       ],
       "hello-mars": [
+        "dist/hello-mars",
         "dist/hello-mars"
       ],
       "hello-mars/*": [
+        "dist/hello-mars/*",
         "dist/hello-mars/*"
       ]
     }
