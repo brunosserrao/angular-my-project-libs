@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HelloWorldModule } from 'projects/hello-world/src/public-api';
+import { HelloMarsModule } from 'projects/hello-mars/src/lib/hello-mars.module';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,8 @@ import { HelloWorldModule } from 'projects/hello-world/src/public-api';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HelloWorldModule
+    HelloWorldModule,
+    HelloMarsModule
   ],
   exports: [
   ],

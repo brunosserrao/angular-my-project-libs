@@ -159,6 +159,41 @@
           }
         }
       }
+    },
+    "hello-mars": {
+      "projectType": "library",
+      "root": "projects/hello-mars",
+      "sourceRoot": "projects/hello-mars/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/hello-mars/tsconfig.lib.json",
+            "project": "projects/hello-mars/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hello-mars/src/test.ts",
+            "tsConfig": "projects/hello-mars/tsconfig.spec.json",
+            "karmaConfig": "projects/hello-mars/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/hello-mars/tsconfig.lib.json",
+              "projects/hello-mars/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "my-project-libs"
 }
