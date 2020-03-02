@@ -1,6 +1,27 @@
 {
   "name": "hello-world",
   "version": "0.0.1",
+  "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptates iusto vero velit? Sunt et repudiandae recusandae sequi, illo ullam amet possimus nisi impedit dignissimos distinctio ratione temporibus, quam iusto.",
+  "author": {
+    "name": "Bruno Serrão",
+    "url": "http://www.brunoserrao.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brunosserrao/angular-my-project-libs"
+  },
+  "bugs": {
+    "url": "https://github.com/brunosserrao/angular-my-project-libs/issues"
+  },
+  "homepage": "http://www.brunoserrao.com/angular-my-project-libs",
+  "keywords": [
+    "angular",
+    "javascript",
+    "learning",
+    "modules",
+    "components"
+  ],
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^8.2.14",
     "@angular/core": "^8.2.14"
