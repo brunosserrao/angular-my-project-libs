@@ -124,6 +124,41 @@
           }
         }
       }
+    },
+    "hello-world": {
+      "projectType": "library",
+      "root": "projects/hello-world",
+      "sourceRoot": "projects/hello-world/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/hello-world/tsconfig.lib.json",
+            "project": "projects/hello-world/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/hello-world/src/test.ts",
+            "tsConfig": "projects/hello-world/tsconfig.spec.json",
+            "karmaConfig": "projects/hello-world/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/hello-world/tsconfig.lib.json",
+              "projects/hello-world/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }},
   "defaultProject": "my-project-libs"
 }
